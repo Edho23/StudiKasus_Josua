@@ -1,0 +1,21 @@
+import java.util.*;
+class ClassToken{
+	public static void main(String args[]){
+		String MathExpr=new String("1000+3*4/10-100%5");
+		String DelExpr= new String("+-*/%");
+		StringTokenizer st= new StringTokenizer(MathExpr,DelExpr,true);
+		System.out.println("Token Dengan Delimiter = ");
+		while(st.hasMoreTokens()){
+			System.out.println(st.nextToken());
+		}
+
+		System.out.println();
+		StringTokenizer st1= new StringTokenizer(MathExpr,DelExpr,false);
+		System.out.println("Token Tanpa Delimiter = ");
+		while(st1.hasMoreTokens()){
+			System.out.println(st1.nextToken());
+		}
+
+
+	}
+}
